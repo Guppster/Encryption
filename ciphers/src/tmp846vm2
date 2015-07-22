@@ -1,0 +1,15 @@
+extern crate rand;
+
+use std::io;
+use std::cmp::Ordering; 
+use rand::Rng;
+
+fn main() {
+    println!("Hello, world!\n");
+
+    println!("Please select a cipher type:");
+    println!("[P]olyalphabetic:");
+    println!("[X]OR");
+    println!("[O]n");
+
+}

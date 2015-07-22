@@ -1,0 +1,60 @@
+extern crate rand;
+
+use std::io;
+use std::cmp::Ordering; 
+use std::ascii::AsciiExt;
+use rand::Rng;
+
+struct ciPolyalphabetic
+{
+	key: String,
+	message: String,
+	output: String,
+}
+
+impl ciPolyalphabetic 
+{
+	fn Encode()
+	{
+		if self.key == "" || self.message = ""
+		{
+			println!("Erro")
+		}
+	}
+
+	fn Decode(&self, table: &Table)
+	{
+		
+	}
+}
+
+
+fn main() 
+{
+    println!("Hello, world!\n");
+
+    println!("Please select a cipher type:");
+    println!("[P]olyalphabetic:");
+    println!("[X]OR");
+    println!("[O]ne Time Pad");
+
+    let mut cipher = String::new();
+
+    io::stdin().read_line(&mut cipher)
+    	.ok()
+    	.expect("Failed to read line");
+
+    if cipher.eq_ignore_ascii_case("P") || cipher.eq_ignore_ascii_case("Polyalphabetic")
+    {
+
+    }
+    else if cipher.eq_ignore_ascii_case("x") || cipher.eq_ignore_ascii_case("XOR")
+    {
+
+    }
+    else if cipher.eq_ignore_ascii_case("O") || cipher.eq_ignore_ascii_case("One Time Pad")
+    {
+
+    }
+
+}
